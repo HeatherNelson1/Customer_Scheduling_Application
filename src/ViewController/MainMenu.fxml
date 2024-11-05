@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="339.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainMenuController">
+   <children>
+      <Label layoutX="25.0" layoutY="16.0" prefHeight="45.0" prefWidth="153.0" text="Main Menu">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <HBox layoutX="527.0" layoutY="8.0" prefHeight="53.0" prefWidth="61.0">
+         <children>
+            <Button fx:id="exit" mnemonicParsing="false" onMouseClicked="#exitToMain" prefHeight="51.0" prefWidth="58.0" text="Exit" />
+         </children>
+      </HBox>
+      <AnchorPane layoutX="79.0" layoutY="81.0" prefHeight="219.0" prefWidth="449.0">
+         <children>
+            <HBox layoutX="41.0" layoutY="70.0" prefHeight="169.0" prefWidth="407.0">
+               <children>
+                  <VBox prefHeight="214.0" prefWidth="218.0">
+                     <children>
+                        <Button fx:id="apptMenuBtn" mnemonicParsing="false" onMouseClicked="#apptMenu" prefHeight="25.0" prefWidth="229.0" text="Appointment Menu">
+                           <VBox.margin>
+                              <Insets top="3.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="customerMenuBtn" mnemonicParsing="false" onMouseClicked="#customerMenu" prefHeight="25.0" prefWidth="229.0" text="Customer Menu">
+                           <VBox.margin>
+                              <Insets top="3.0" />
+                           </VBox.margin></Button>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="214.0" prefWidth="235.0">
+                     <children>
+                        <Button fx:id="apptTypeReportBtn" mnemonicParsing="false" onMouseClicked="#apptReport" prefHeight="25.0" prefWidth="208.0" text="Appointments by Type">
+                           <VBox.margin>
+                              <Insets left="5.0" top="3.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="scheduleReportBtn" mnemonicParsing="false" onMouseClicked="#schedReport" prefHeight="25.0" prefWidth="209.0" text="Schedule by Contact">
+                           <VBox.margin>
+                              <Insets left="5.0" top="3.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="customerByCountry" mnemonicParsing="false" onMouseClicked="#customerByCountry" prefHeight="25.0" prefWidth="215.0" text="Customer By Country">
+                           <VBox.margin>
+                              <Insets left="5.0" top="3.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox layoutX="56.0" prefHeight="67.0" prefWidth="363.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="68.0" prefWidth="252.0" text="Navigation">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="67.0" prefWidth="239.0" text="Reports">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

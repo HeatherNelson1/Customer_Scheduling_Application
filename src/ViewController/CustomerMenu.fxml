@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CustomerMenuController">
+   <children>
+      <HBox layoutX="490.0" layoutY="3.0" prefHeight="59.0" prefWidth="101.0">
+         <children>
+            <Button fx:id="backBtn" mnemonicParsing="false" onMouseClicked="#backBtn" prefHeight="56.0" prefWidth="51.0" text="Back" />
+            <Button fx:id="exit" mnemonicParsing="false" onMouseClicked="#exitToMain" prefHeight="56.0" prefWidth="53.0" text="Exit" />
+         </children>
+      </HBox>
+      <HBox layoutX="135.0" layoutY="403.0" prefHeight="35.0" prefWidth="357.0">
+         <children>
+            <Button fx:id="addCustomerBtn" mnemonicParsing="false" onMouseClicked="#addCustomer" prefHeight="35.0" prefWidth="143.0" text="Add Customer" />
+            <Button fx:id="updateCustomerBtn" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#updateCustomer" prefHeight="35.0" prefWidth="143.0" text="Update Customer" />
+            <Button fx:id="deleteCustomerBtn" layoutX="153.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#deleteCustomer" prefHeight="35.0" prefWidth="116.0" text="Delete" />
+         </children>
+      </HBox>
+      <AnchorPane layoutY="3.0" onMouseClicked="#exitToMain" prefHeight="390.0" prefWidth="590.0">
+         <children>
+            <TableView fx:id="custTable" layoutX="16.0" layoutY="138.0" prefHeight="225.0" prefWidth="561.0">
+              <columns>
+                  <TableColumn fx:id="customerIdCol" prefWidth="96.0" text="Customer ID" />
+                  <TableColumn fx:id="customerNameCol" minWidth="1.0" prefWidth="131.0" text="Customer Name" />
+                  <TableColumn fx:id="addressCol" minWidth="4.0" prefWidth="110.0" text="Address" />
+                  <TableColumn fx:id="zipCol" minWidth="3.0" prefWidth="114.0" text="Postal Code" />
+                <TableColumn fx:id="stateCol" prefWidth="106.0" text="State" />
+              </columns>
+            </TableView>
+            <Label layoutX="18.0" layoutY="4.0" prefHeight="65.0" prefWidth="341.0" text="Customer">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
