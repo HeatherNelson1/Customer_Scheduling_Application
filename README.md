@@ -1,4 +1,4 @@
-# Customer_Scheduling_Application
+# Customer Scheduling Application
 Software allows user to schedule and manage appointments and customers. Completed this application as part of WGU coursework for C195/Software II (Java development) and submitted as final captstone.
 
 ### WGU  Capstone 
