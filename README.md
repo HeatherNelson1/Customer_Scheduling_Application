@@ -1,7 +1,7 @@
 # Customer_Scheduling_Application
-Software allows user to schedule and manage appointments and customers
+Software allows user to schedule and manage appointments and customers. Completed this application as part of WGU coursework for C195/Software II (Java development) and submitted as final captstone.
 
-### The WGU C195 Software II Project 
+### WGU  Capstone 
 The project emphasizes the application of key software engineering principles, object-oriented programming (OOP) concepts, and best practices learned throughout the course. Below are the main requirements of the project:
 
 1. Core Functionality:
